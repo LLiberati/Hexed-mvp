@@ -24,3 +24,42 @@ function handlePayment() {
     document.getElementById('paywall').classList.add('hidden');
     document.getElementById('premiumContent').classList.remove('hidden');
 }
+
+let tosses = [];
+let currentToss = 1;
+
+function startCoinToss() {
+    document.getElementById('castingMethod').classList.add('hidden');
+    document.getElementById('coinTossing').classList.remove('hidden');
+}
+
+function recordToss(value) {
+    // 0=3tails(6), 1=2tails(8), 2=2heads(7), 3=3heads(9)
+    tosses.push(value);
+    
+    document.getElementById('tossList').innerHTML += 
+        `<div>Line ${currentToss}: ${getTossName(value)}</div>`;
+    
+    currentToss++;
+    
+    if (currentToss > 6) {
+        calculateHexagram();
+    } else {
+        document.getElementById('tossNumber').textContent = currentToss;
+    }
+}
+
+function getTossName(value) {
+    const names = ['Changing Yin (6)', 'Yin (8)', 'Yang (7)', 'Changing Yang (9)'];
+    return names[value];
+}
+
+function calculateHexagram() {
+    // This is simplified - you'd need full calculation
+    // For now, always shows Hex 39→8
+    document.getElementById('coinTossing').classList.add('hidden');
+    document.getElementById('getReading').classList.remove('hidden');
+    
+    // Show message about beta limitation
+    alert('Your cast reveals Hexagram 39 transforming to Hexagram 8. (During beta, all readings explore this transformation.)');
+}
