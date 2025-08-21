@@ -10,61 +10,112 @@
     <div class="container">
         <header>
             <h1>HEXED</h1>
-            <p class="tagline">Stop forcing. Start flowing.</p>
+            <p class="tagline">Your obstruction IS the universe redirecting you perfectly</p>
         </header>
 
         <div id="questionForm" class="section">
-            <h2>Ask Your Question</h2>
-            <input type="text" id="userQuestion" placeholder="What do you need to know?">
-            <button onclick="showReading()">Get Reading</button>
+            <h2>What do you need to know?</h2>
+            <input type="text" id="userQuestion" placeholder="Ask your question...">
+            <div class="cast-info">
+                <p>Today's Reading: Obstruction → Union (Hex 39 → 8)</p>
+            </div>
+            <button onclick="showReading()">Get Your Reading</button>
         </div>
 
         <div id="reading" class="section hidden">
-            <h2>Your Reading: Obstruction → Union</h2>
+            <div class="reading-header">
+                <h2>Your Reading</h2>
+                <p class="cast-display">Hexagram 39 (Obstruction) → Hexagram 8 (Union)</p>
+                <p class="user-question" id="displayQuestion"></p>
+            </div>
             
             <div class="reading-section">
                 <h3>1. Plain Answer</h3>
-                <p id="plainAnswer">Stop forcing through obstacles. Success comes through finding your right people, not pushing alone.</p>
+                <p class="plain-answer">Stop forcing through obstacles. Success comes through finding your right people, not pushing alone. Your lack of confidence comes from ramming against walls alone. You're moving from solitary obstruction to magnetic union. Success isn't about pushing harder - it's about attracting the right support system.</p>
             </div>
 
             <div class="reading-section">
                 <h3>2. Your Inner Pattern</h3>
-                <p id="innerPattern">You possess extraordinary navigation intelligence that activates when direct paths fail, but you keep forcing through obstacles alone, believing that asking for help means weakness.</p>
+                <p>You possess extraordinary navigation intelligence combined with magnetic resonance for attracting allies, but you're using neither gift. Instead, you're exhausting yourself forcing through obstacles alone while simultaneously shapeshifting to please everyone, which prevents your real supporters from finding you.</p>
+                <p>The pattern beneath: Someone taught you that success means never backing down, that confidence comes from conquering obstacles directly, that asking for help is failure. So you keep ramming mountains while wearing masks, wondering why you're exhausted and unsuccessful.</p>
             </div>
 
             <div class="reading-section">
                 <h3>3. Your Moment</h3>
-                <p>You're at maximum obstruction trying to force success alone. Every direction you push meets resistance because you're approaching everything wrong.</p>
+                <p>You're at maximum obstruction trying to force success alone. Water above mountain - you're trying to flow uphill through sheer will. Every direction you push meets resistance because you're approaching everything wrong. The universe has blocked every solo path to force you to discover collaborative success.</p>
+                <p>Right now you're transitioning from "I must conquer this alone" to "I need to find my people." This isn't about giving up on success - it's about recognizing that sustainable success comes through authentic alliance, not isolated forcing.</p>
             </div>
 
             <div class="reading-section">
                 <h3>4. What Is Being Asked</h3>
-                <p>Stop. Forcing. Through. The universe is asking you to completely reverse your approach.</p>
+                <p>Stop. Forcing. Through. The universe is asking you to completely reverse your approach. Turn back from the obstruction, drop your masks, and find your actual allies. Your confidence doesn't come from conquering obstacles but from being supported by the right people.</p>
+                <p>The ask: Stop trying to be confident through force. Start being confident through authenticity. Your success isn't waiting on the other side of the mountain you're ramming - it's waiting in the allies you'll magnetize when you finally show up as yourself.</p>
             </div>
 
             <div class="reading-section">
                 <h3>5. Moving Lines</h3>
-                <p>Line 3: Going leads to obstruction, hence he comes back. This is the pivot point.</p>
+                <p><strong>Line 3: Going leads to obstruction, hence he comes back</strong></p>
+                <p>This is the pivot point. You've been going forward into obstruction, and it's not working. The line literally tells you to come back - to retreat, reassess, and find another way. "Coming back" means returning to your authentic self and finding your real support system.</p>
+                <p>This isn't failure - it's intelligence. Only fools keep ramming the same wall. The wise recognize when direct approach fails and find alternatives.</p>
             </div>
 
             <div class="reading-section">
                 <h3>6. Domain Questions</h3>
-                <p>Q: Why do I lack confidence despite working so hard?<br>
-                A: Because you're working hard at the wrong things.</p>
+                <div class="qa-section">
+                    <p><strong>Q: Why do I lack confidence despite working so hard?</strong></p>
+                    <p>A: Because you're working hard at the wrong things - forcing through obstacles alone while hiding your real self. Confidence comes from aligned action with authentic support, not solo forcing while shapeshifting.</p>
+                    
+                    <p><strong>Q: What's blocking my success?</strong></p>
+                    <p>A: Your insistence on doing everything alone combined with your terror of being authentically yourself. You can't succeed solo, and your real allies can't find you while you're performing different versions for different people.</p>
+                    
+                    <p><strong>Q: How do I become truly confident?</strong></p>
+                    <p>A: Drop the act. Show up as exactly who you are. Let wrong people leave and right people arrive. Build success with those who amplify your authentic gifts rather than forcing alone.</p>
+                </div>
             </div>
 
             <div id="paywall" class="paywall">
-                <h3>Unlock Complete Reading</h3>
-                <p>Discover your outcome, true desire, and exact steps to receive what you want.</p>
-                <button onclick="handlePayment()">Unlock for £6.99</button>
+                <h3>Unlock Your Complete Reading</h3>
+                <p>Discover what's really coming, your deepest desire, and the exact steps to magnetically attract your success.</p>
+                <ul>
+                    <li>Your specific outcome timeline</li>
+                    <li>Your soul's true desire beneath the question</li>
+                    <li>5 concrete steps to receive what you want</li>
+                    <li>Your predictive recast question</li>
+                </ul>
+                <button onclick="handlePayment()">Unlock Full Reading - £6.99</button>
             </div>
 
             <div id="premiumContent" class="hidden">
-                <div class="reading-section">
+                <div class="reading-section premium">
                     <h3>7. The Outcome</h3>
-                    <p>Hex 8 shows you discovering that real success comes through authentic alliance...</p>
+                    <p>Hex 8 (Union) shows you discovering that real success comes through authentic alliance. After exhausting yourself with solo obstruction, you finally understand that confidence and success are collaborative achievements. You stop shapeshifting and start magnetizing your actual tribe.</p>
+                    <p>The transformation from obstruction to union means you stop trying to be the hero who conquers alone and become the magnet who attracts the right team. Your confidence skyrockets when you realize you don't have to do this alone.</p>
+                    <p><strong>Timeline:</strong> Within 3-6 months, expect complete shift. The obstacles that seemed insurmountable alone become manageable with the right support. Your success accelerates not because you push harder but because you finally have genuine backing.</p>
                 </div>
-                <!-- Add remaining sections -->
+
+                <div class="reading-section premium">
+                    <h3>8. Your True Desire</h3>
+                    <p>You don't actually want to succeed alone - you want to be supported in your success. Your true desire isn't to conquer every obstacle through solo force but to have a team that amplifies your gifts. You want confidence that comes from belonging, not from battling.</p>
+                    <p>Deeper still: You want to drop the exhausting performance of being everyone's version of successful and discover what success means to YOU. You want allies who see your real vision and help you achieve it, not an audience for your solo struggle.</p>
+                </div>
+
+                <div class="reading-section premium">
+                    <h3>9. How to Receive It</h3>
+                    <ol>
+                        <li><strong>Next 72 hours:</strong> Stop all forcing immediately. List every obstacle you're ramming. Step back from all of them.</li>
+                        <li><strong>Week 1:</strong> Identify where you're shapeshifting most. Pick one environment and show up 100% authentic there.</li>
+                        <li><strong>Week 2-3:</strong> Start sharing your real vision and challenges with select people. See who leans in versus who pulls back.</li>
+                        <li><strong>Month 2:</strong> Form alliance with 2-3 people who genuinely resonate with your authentic vision. Stop trying to work with everyone.</li>
+                        <li><strong>Month 3:</strong> Approach previous obstacles with your new support system. Watch how different everything feels.</li>
+                    </ol>
+                </div>
+
+                <div class="reading-section premium">
+                    <h3>10. Predictive Recast Question</h3>
+                    <p class="recast-question">"If I stop forcing through obstacles alone and instead build authentic alliances over the next 90 days, will my confidence and success significantly increase?"</p>
+                    <p>This tests whether success comes through solo force or supported authenticity. Given your transformation from Hex 39 to Hex 8, if you turn back from solo obstruction and magnetize genuine allies through authenticity, confidence and success are inevitable.</p>
+                    <p><strong>Success probability:</strong> 89% with authentic support system versus 8% continuing solo forcing.</p>
+                </div>
             </div>
         </div>
     </div>
