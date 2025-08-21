@@ -13,14 +13,27 @@
             <p class="tagline">Your obstruction IS the universe redirecting you perfectly</p>
         </header>
 
-        <div id="questionForm" class="section">
-            <h2>What do you need to know?</h2>
-            <input type="text" id="userQuestion" placeholder="Ask your question...">
-            <div class="cast-info">
-                <p>Today's Reading: Obstruction → Union (Hex 39 → 8)</p>
+        <<div id="questionForm" class="section">
+    <h2>What do you need to know?</h2>
+    <input type="text" id="userQuestion" placeholder="Ask your question...">
+    
+    <div id="castingMethod">
+        <h3>Cast Your Hexagram</h3>
+        <button onclick="startCoinToss()">Toss Three Coins</button>
+        <div id="coinTossing" class="hidden">
+            <p>Toss #<span id="tossNumber">1</span> of 6</p>
+            <div class="coins">
+                <button onclick="recordToss(2)">2 Heads, 1 Tail</button>
+                <button onclick="recordToss(3)">3 Heads</button>
+                <button onclick="recordToss(1)">2 Tails, 1 Head</button>
+                <button onclick="recordToss(0)">3 Tails</button>
             </div>
-            <button onclick="showReading()">Get Your Reading</button>
+            <div id="tossList"></div>
         </div>
+    </div>
+    
+    <button id="getReading" onclick="showReading()" class="hidden">Get Your Reading</button>
+</div>
 
         <div id="reading" class="section hidden">
             <div class="reading-header">
