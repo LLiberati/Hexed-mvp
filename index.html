@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXED - Oracle Readings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HEXED</h1>
+            <p class="tagline">Stop forcing. Start flowing.</p>
+        </header>
+
+        <div id="questionForm" class="section">
+            <h2>Ask Your Question</h2>
+            <input type="text" id="userQuestion" placeholder="What do you need to know?">
+            <button onclick="showReading()">Get Reading</button>
+        </div>
+
+        <div id="reading" class="section hidden">
+            <h2>Your Reading: Obstruction → Union</h2>
+            
+            <div class="reading-section">
+                <h3>1. Plain Answer</h3>
+                <p id="plainAnswer">Stop forcing through obstacles. Success comes through finding your right people, not pushing alone.</p>
+            </div>
+
+            <div class="reading-section">
+                <h3>2. Your Inner Pattern</h3>
+                <p id="innerPattern">You possess extraordinary navigation intelligence that activates when direct paths fail, but you keep forcing through obstacles alone, believing that asking for help means weakness.</p>
+            </div>
+
+            <div class="reading-section">
+                <h3>3. Your Moment</h3>
+                <p>You're at maximum obstruction trying to force success alone. Every direction you push meets resistance because you're approaching everything wrong.</p>
+            </div>
+
+            <div class="reading-section">
+                <h3>4. What Is Being Asked</h3>
+                <p>Stop. Forcing. Through. The universe is asking you to completely reverse your approach.</p>
+            </div>
+
+            <div class="reading-section">
+                <h3>5. Moving Lines</h3>
+                <p>Line 3: Going leads to obstruction, hence he comes back. This is the pivot point.</p>
+            </div>
+
+            <div class="reading-section">
+                <h3>6. Domain Questions</h3>
+                <p>Q: Why do I lack confidence despite working so hard?<br>
+                A: Because you're working hard at the wrong things.</p>
+            </div>
+
+            <div id="paywall" class="paywall">
+                <h3>Unlock Complete Reading</h3>
+                <p>Discover your outcome, true desire, and exact steps to receive what you want.</p>
+                <button onclick="handlePayment()">Unlock for £6.99</button>
+            </div>
+
+            <div id="premiumContent" class="hidden">
+                <div class="reading-section">
+                    <h3>7. The Outcome</h3>
+                    <p>Hex 8 shows you discovering that real success comes through authentic alliance...</p>
+                </div>
+                <!-- Add remaining sections -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
